@@ -1,19 +1,21 @@
 'use strict'
 
+//DEPENDENCIES
 const express = require('express');
 
 const app = express();
+
+app.use(express.static('public'));
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!' });
+  res.render('index');
 });
 
 // SET UP SERVER ENVIRONMENT
 var port = process.env.PORT || 3000;
-
 app.listen(port, function(){
     console.log('Server running on port ' + port);
 });
