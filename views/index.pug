@@ -1,26 +1,35 @@
+
 doctype html
 html
   head
-    meta(charset='utf-8')
-    meta(name='theme-color', content='#F06300')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='public/assets/index.css')
     title CFWC 2017
+    meta(charset='utf-8')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    meta(name='theme-color', content='#F06300')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='stylesheets/index.css')
   body
     .landing-screen
-      img(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
-      p September 22 &amp; 23
-      p Yeatman&apos;s Cove
-      p 150+ Culinary Stars,
-      p 1 Flavorsplosion
-      p Tickets on sale June 1
-      |
+      img.logo(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
+      |  
+      span September 22 & 23
+      |  
+      span Yeatman's Cove
+      |  
+      span 150+ Culinary Stars,
+      |  
+      span 1 Flavorsplosion
+      |  
+      span Tickets
+      |  
+      span on sale June 1
+      |  
       img(src='images/down-chevron.svg', alt='')
     .email-capture
-      p Get updates &amp; news
+      p Get updates & news
       form(action='index.html', method='post')
-        input(type='text', name='email', value='', placeholder='massimo.bottura@mail.com')
-        |
+        input(type='text', name='email', placeholder='massimo.bottura@mail.com')
+        |  
         input(type='submit', name='submit', value='Join')
     .video
       p CFWC 2016 Video
@@ -29,19 +38,16 @@ html
       p CFWC 2016 Photos
       hr
     .footer
-      div
-        a(href='#')
-          img(src='images/vimeo-icon.svg', alt='Vimeo Icon')
-        |
-        a(href='#')
-          img(src='images/facebook-icon.svg', alt='Facebook Icon')
-        |
-        a(href='#')
-          img(src='images/instagram-icon.svg', alt='Instagram Icon')
-      div
+      .logo-holder
+        img(src='images/vimeo-icon.svg', alt='Vimeo Icon')
+        |  
+        img(src='images/facebook-icon.svg', alt='Facebook Icon')
+        |  
+        img(src='images/instagram-icon.svg', alt='Instagram Icon')
+      .text-links
         a(href='#') Contact Us
-        |
+        |  
         a(href='#') Privacy Policy
-        |
+        |  
         a(href='#') Terms of Use
-      p &copy; 2017 Cincinnati Food and Wine Classic
+        p © 2017 Cincinnati Food and Wine Classic
