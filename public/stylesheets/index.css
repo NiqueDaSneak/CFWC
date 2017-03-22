@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background-image: url("/images/body-bg.png"); }
 
 .landing-screen {
   background-image: url("/images/landing-mobile.png");
