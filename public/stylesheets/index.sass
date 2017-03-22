@@ -1,1 +1,49 @@
 $brand-orange: #F06300
+$brand-white: white
+$brand-black: black
+
+body
+  margin: 0
+
+.landing-screen
+  background-image: url('/images/landing-mobile.png')
+  height: 100vh
+  background-position: center
+  color: $brand-white
+  text-align: center
+
+  span
+    display: block
+    padding-left: 10vw
+    padding-right: 10vw
+    text-shadow: 0px 3px 3px $brand-black
+    &:nth-of-type(1), &:nth-of-type(2)
+      font-size: 10vw
+    &:nth-of-type(3), &:nth-of-type(4)
+      font-size: 8vw
+    &:nth-of-type(5), &:nth-of-type(6)
+      font-size: 7vw
+    &:nth-of-type(1)
+      padding-top: 3vh
+    &:nth-of-type(3)
+      padding-top: 12vh
+    &:nth-of-type(5)
+      padding-top: 12vh
+
+  img
+    display: block
+    margin: 0 auto
+    &:first-of-type
+      padding-top: 8vh
+      width: 65vw
+    &:last-of-type
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 4vh
+
+.footer
+  background-color: $brand-orange
+
+  img
+    width: 15vw
