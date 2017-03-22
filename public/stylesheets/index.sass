@@ -1,17 +1,19 @@
+// COLORS
 $brand-orange: #F06300
 $brand-white: white
 $brand-black: black
+$brand-grey: #D8D8D8
 
-
+// LANDING MODULE
 body
   margin: 0
   background-image: url('/images/body-bg.png')
+  color: $brand-white
 
 .landing-screen
   background-image: url('/images/landing-mobile.png')
   height: 100vh
   background-position: center
-  color: $brand-white
   text-align: center
 
   span
@@ -49,3 +51,29 @@ body
 
   img
     width: 15vw
+
+// EMAIL CAPTURE
+.email-capture
+  text-align: center
+  p
+    font-size: 6vw
+  input[type=text]
+    width: 65vw
+    height: 4.3vh
+    border-radius: 1.5vw
+    border-style: none
+    font-size: 4vw
+    text-align: center
+    background-color: $brand-grey
+  input[type=submit]
+    background-color: $brand-orange
+    border-style: none
+    color: white
+    font-size: 4.3vw
+    margin-top: 6vw
+    padding-left: 15vw
+    padding-right: 15vw
+    padding-top: 1.5vh
+    padding-bottom: 1.5vh
+    border-radius: 1.5vw
+    box-shadow: 0px 3px 15px 0px $brand-black
