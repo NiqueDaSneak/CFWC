@@ -28,17 +28,16 @@ body {
       padding-top: 12vh; }
     .landing-screen span:nth-of-type(5) {
       padding-top: 12vh; }
-  .landing-screen img {
+  .landing-screen header img {
+    padding-top: 8vh;
+    width: 65vw; }
+  .landing-screen .down-chevron {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4vh;
     display: block;
     margin: 0 auto; }
-    .landing-screen img:first-of-type {
-      padding-top: 8vh;
-      width: 65vw; }
-    .landing-screen img:last-of-type {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 4vh; }
 
 .footer {
   background-color: #F06300; }
