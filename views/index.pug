@@ -8,9 +8,12 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='icon', href='images/favicon.ico')
     link(rel='stylesheet', href='stylesheets/index.css')
+    script(type='text/javascript', src='/javascript/main.js')
   body
+    .landing-image
     .landing-screen
-      img.logo(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
+      header
+        img.logo-big(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
       |  
       span September 22 &amp; 23
       |  
@@ -20,11 +23,9 @@ html
       |  
       span 1 Flavorsplosion
       |  
-      span Tickets
+      span Tickets on sale June 1
       |  
-      span on sale June 1
-      |  
-      img(src='images/down-chevron.svg', alt='')
+      img.down-chevron(src='images/down-chevron.svg', alt='')
     .email-capture
       p Get updates &amp; news
       form(action='index.html', method='post')
