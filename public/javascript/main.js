@@ -8,7 +8,7 @@ $(document).ready(function() {
     function animateHeader() {
         if (scrolled === true) {
             $('header').addClass('header-active').children().removeClass('logo-big');
-            $('.landing-image').fadeOut('slow');
+            $('.landing-image').fadeOut(500);
         }
     }
 
