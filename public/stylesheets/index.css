@@ -13,8 +13,6 @@ body {
   text-align: center; }
   .landing-screen span {
     display: block;
-    padding-left: 10vw;
-    padding-right: 10vw;
     text-shadow: 0px 3px 3px black; }
     .landing-screen span:nth-of-type(1), .landing-screen span:nth-of-type(2) {
       font-size: 10vw; }
@@ -23,14 +21,35 @@ body {
     .landing-screen span:nth-of-type(5), .landing-screen span:nth-of-type(6) {
       font-size: 7vw; }
     .landing-screen span:nth-of-type(1) {
-      padding-top: 3vh; }
+      width: 100%;
+      position: absolute;
+      bottom: 62vh; }
+    .landing-screen span:nth-of-type(2) {
+      width: 100%;
+      position: absolute;
+      bottom: 56vh; }
     .landing-screen span:nth-of-type(3) {
-      padding-top: 12vh; }
+      width: 100%;
+      position: absolute;
+      bottom: 43vh; }
+    .landing-screen span:nth-of-type(4) {
+      width: 100%;
+      position: absolute;
+      bottom: 38vh; }
     .landing-screen span:nth-of-type(5) {
-      padding-top: 12vh; }
-  .landing-screen header img {
-    padding-top: 8vh;
-    width: 65vw; }
+      width: 100%;
+      position: absolute;
+      bottom: 10vh; }
+  .landing-screen .header-active {
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px black;
+    position: fixed;
+    width: 100vw;
+    z-index: 1; }
+    .landing-screen .header-active img {
+      width: 22vw;
+      padding-top: 2vh;
+      padding-bottom: 2vh; }
   .landing-screen .down-chevron {
     position: absolute;
     left: 0;
@@ -38,6 +57,10 @@ body {
     bottom: 4vh;
     display: block;
     margin: 0 auto; }
+
+.logo-big {
+  padding-top: 8vh;
+  width: 65vw; }
 
 .footer {
   background-color: #F06300; }
