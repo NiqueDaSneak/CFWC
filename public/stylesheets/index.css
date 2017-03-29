@@ -85,7 +85,7 @@ body {
 
 .email-capture {
   text-align: center;
-  padding-bottom: 8vh; }
+  margin-top: 6vh; }
   .email-capture p {
     font-size: 6vw; }
   .email-capture input[type=text] {
@@ -110,12 +110,14 @@ body {
     box-shadow: 0px 3px 15px 0px black; }
 
 .video, .photos {
-  text-align: center; }
+  text-align: center;
+  margin-top: 7vh; }
   .video span, .photos span {
     font-size: 8vw; }
   .video hr, .photos hr {
     width: 80vw;
-    border: 0.1vh solid #F06300; }
+    border: 0.1vh solid #F06300;
+    margin-bottom: 7vh; }
 
 .footer {
   text-align: center;
