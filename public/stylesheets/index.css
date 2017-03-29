@@ -39,7 +39,7 @@ body {
     .landing-screen span:nth-of-type(2) {
       width: 100%;
       position: absolute;
-      bottom: 44vh; }
+      bottom: 43vh; }
     .landing-screen span:nth-of-type(3) {
       width: 100%;
       position: absolute;
@@ -62,10 +62,10 @@ body {
     transition: background-color .5s; }
     .landing-screen .header-active img {
       width: 22vw;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-      -webkit-transition: width .5s;
-      transition: width .5s; }
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+      -webkit-transition: width .7s;
+      transition: width .7s; }
   .landing-screen .down-chevron {
     position: absolute;
     left: 0;
