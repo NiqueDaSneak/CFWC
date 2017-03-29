@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 // const html2pug = require('gulp-html2pug');
 
-gulp.task('autoprefixer', function() {
+gulp.task('styles', function() {
   const gutil = require('gulp-util'),
         sass = require('gulp-sass'),
         connect = require('gulp-connect'),
@@ -24,7 +24,7 @@ gulp.task('autoprefixer', function() {
 // });
 
 gulp.task('watch', function(){
-  gulp.watch('public/stylesheets/index.sass', ['autoprefixer']);
+  gulp.watch('public/stylesheets/index.sass', ['styles']);
 });
 
 
