@@ -59,11 +59,11 @@ body {
     width: 100vw;
     z-index: 1;
     -webkit-transition: background-color .5s;
-    transition: background-color .5s; }
+    transition: background-color .5s;
+    padding-top: 3vh;
+    padding-bottom: 3vh; }
     .landing-screen .header-active img {
       width: 22vw;
-      padding-top: 3vh;
-      padding-bottom: 3vh;
       -webkit-transition: width .7s;
       transition: width .7s; }
   .landing-screen .down-chevron {
