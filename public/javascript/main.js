@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     $('.overlay').hide();
     $('.gallery').click(function(){
-      $('.overlay').addClass('active').append('<img class="full-image" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(1500);
+      $('.overlay').addClass('active').append('<img class="full-image" data-index="' + event.target.dataset.index + '" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(1500);
     });
 
     $('img.controls:first-of-type').click(function(){
