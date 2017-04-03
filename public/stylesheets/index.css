@@ -144,7 +144,9 @@ body {
 .video-responsive {
   padding-bottom: 56.25%;
   position: relative;
-  height: 0; }
+  height: 0;
+  margin-left: 10vw;
+  margin-right: 10vw; }
 
 iframe {
   left: 0;
@@ -152,3 +154,11 @@ iframe {
   height: 100%;
   width: 100%;
   position: absolute; }
+
+.photos {
+  padding-bottom: 10vh; }
+  .photos .gallery {
+    margin-left: 10vw;
+    margin-right: 10vw; }
+    .photos .gallery .thumbs {
+      width: 40vw; }
