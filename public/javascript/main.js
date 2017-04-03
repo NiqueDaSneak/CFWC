@@ -20,8 +20,21 @@ $(document).ready(function() {
     (function loadThumbnails() {
       var path = "gallery/thumbs"
       for (var i = 1; i <= 10; i++) {
-        $('.gallery').append('<img class="thumbs" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
+        $('.gallery').append('<img class="thumbs" data-index="' + i + '" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
       }
     })();
+
+    $('.overlay').hide();
+    $('.gallery').click(function(){
+      $('.overlay').addClass('active').append('<img class="full-image" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(1500);
+    });
+
+    $('img.controls:first-of-type').click(function(){
+      console.log('left clicked');
+    });
+
+    $('img.controls:nth-of-type(2)').click(function(){
+      console.log('right clicked');
+    });
 
 });
