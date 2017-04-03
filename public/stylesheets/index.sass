@@ -166,3 +166,27 @@ iframe
     margin-right: 10vw
     .thumbs
       width: 40vw
+
+.overlay
+  &.active
+    position: fixed
+    top: 0
+    height: 100vh
+    width: 100vw
+    background-color: $brand-black
+    transition: background-color .5s
+    img
+      width: 100vw
+      bottom: 25vh
+      position: absolute
+      opacity: 100%
+    .controls
+      position: absolute
+      bottom: 12vh
+      width: 10vw
+      &:first-of-type
+        left: 10vw
+        transform: rotate(90deg)
+      &:nth-of-type(2)
+        right: 10vw
+        transform: rotate(-90deg)

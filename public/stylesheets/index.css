@@ -162,3 +162,29 @@ iframe {
     margin-right: 10vw; }
     .photos .gallery .thumbs {
       width: 40vw; }
+
+.overlay.active {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s; }
+  .overlay.active img {
+    width: 100vw;
+    bottom: 25vh;
+    position: absolute;
+    opacity: 100%; }
+  .overlay.active .controls {
+    position: absolute;
+    bottom: 12vh;
+    width: 10vw; }
+    .overlay.active .controls:first-of-type {
+      left: 10vw;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    .overlay.active .controls:nth-of-type(2) {
+      right: 10vw;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
