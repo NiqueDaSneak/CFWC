@@ -16,4 +16,12 @@ $(document).ready(function() {
         scrolled = true
         animateHeader()
     });
+
+    (function loadThumbnails() {
+      var path = "gallery/thumbs"
+      for (var i = 1; i <= 10; i++) {
+        $('.gallery').append('<img class="thumbs" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
+      }
+    })();
+
 });
