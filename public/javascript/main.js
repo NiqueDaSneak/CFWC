@@ -40,7 +40,6 @@ $(document).ready(function() {
 
     // LEFT ARROW
     $('img.controls:nth-of-type(2)').click(function(){
-      console.log('left clicked');
       var currentIndex = $('.full-image').data('index');
       if (currentIndex === 1) {
         $('.full-image').remove();
@@ -54,7 +53,6 @@ $(document).ready(function() {
 
     // RIGHT ARROW
     $('img.controls:nth-of-type(3)').click(function(){
-      console.log('right clicked');
       var currentIndex = $('.full-image').data('index');
       if (currentIndex === 10) {
         $('.full-image').remove();
