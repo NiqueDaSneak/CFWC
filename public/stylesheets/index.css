@@ -171,20 +171,26 @@ iframe {
   background-color: black;
   -webkit-transition: background-color .5s;
   transition: background-color .5s; }
-  .overlay.active img {
+  .overlay.active .full-image {
     width: 100vw;
     bottom: 25vh;
     position: absolute;
-    opacity: 100%; }
+    opacity: 100%;
+    left: 0; }
+  .overlay.active .close {
+    position: absolute;
+    bottom: 10vh;
+    left: 48vw;
+    width: 5vw; }
   .overlay.active .controls {
     position: absolute;
     bottom: 12vh;
     width: 10vw; }
-    .overlay.active .controls:first-of-type {
+    .overlay.active .controls:nth-of-type(2) {
       left: 10vw;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
-    .overlay.active .controls:nth-of-type(2) {
+    .overlay.active .controls:nth-of-type(3) {
       right: 10vw;
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }

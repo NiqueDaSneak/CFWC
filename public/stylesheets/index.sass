@@ -175,18 +175,24 @@ iframe
     width: 100vw
     background-color: $brand-black
     transition: background-color .5s
-    img
+    .full-image
       width: 100vw
       bottom: 25vh
       position: absolute
       opacity: 100%
+      left: 0
+    .close
+      position: absolute
+      bottom: 10vh
+      left: 48vw
+      width: 5vw
     .controls
       position: absolute
       bottom: 12vh
       width: 10vw
-      &:first-of-type
+      &:nth-of-type(2)
         left: 10vw
         transform: rotate(90deg)
-      &:nth-of-type(2)
+      &:nth-of-type(3)
         right: 10vw
         transform: rotate(-90deg)
