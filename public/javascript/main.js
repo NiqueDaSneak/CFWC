@@ -24,9 +24,15 @@ $(document).ready(function() {
       }
     })();
 
+    // GALLERY FUNCTIONALITY
     $('.overlay').hide();
     $('.gallery').click(function(){
       $('.overlay').addClass('active').append('<img class="full-image" data-index="' + event.target.dataset.index + '" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(1500);
+    });
+
+    $('.close').click(function(){
+      $('.full-image').remove();
+      $('.overlay').removeClass('active');
     });
 
     $('img.controls:first-of-type').click(function(){
