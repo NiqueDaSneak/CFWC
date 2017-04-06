@@ -173,18 +173,18 @@ iframe {
   transition: background-color .5s; }
   .overlay.active .full-image {
     width: 100vw;
-    bottom: 25vh;
+    bottom: 34vh;
     position: absolute;
     opacity: 100%;
     left: 0; }
   .overlay.active .close {
     position: absolute;
-    bottom: 10vh;
+    bottom: 14vh;
     left: 48vw;
     width: 5vw; }
   .overlay.active .controls {
     position: absolute;
-    bottom: 12vh;
+    bottom: 16vh;
     width: 10vw; }
     .overlay.active .controls:nth-of-type(2) {
       left: 10vw;
