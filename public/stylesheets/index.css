@@ -16,10 +16,10 @@ body {
   z-index: -1;
   height: 100vh;
   width: 100vw;
-  -webkit-transition: -webkit-filter 2s;
-  transition: -webkit-filter 2s;
-  transition: filter 2s;
-  transition: filter 2s, -webkit-filter 2s; }
+  -webkit-transition: -webkit-filter 12s;
+  transition: -webkit-filter 12s;
+  transition: filter 12s;
+  transition: filter 12s, -webkit-filter 12s; }
 
 .landing-screen {
   font-weight: 300;

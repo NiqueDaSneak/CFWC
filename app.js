@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/privacy_policy', function(req,res){
+  res.render('privacy_policy')
+});
+
 // SET UP SERVER ENVIRONMENT
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
