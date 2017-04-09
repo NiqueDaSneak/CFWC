@@ -19,9 +19,7 @@ gulp.task('sass', function(){
 // });
 
 gulp.task('watch', function(){
-  gulp.watch('public/stylesheets/sass/*.sass', ['sass']);
+  gulp.watch('public/stylesheets/sass/**/*.sass', ['sass']);
 });
-
-
 
 gulp.task('default', ['watch', 'sass'])
