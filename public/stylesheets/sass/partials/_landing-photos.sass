@@ -1,0 +1,37 @@
+.photos
+  padding-bottom: 10vh
+  .gallery
+    margin-left: 10vw
+    margin-right: 10vw
+    .thumbs
+      width: 40vw
+
+.overlay
+  &.active
+    position: fixed
+    top: 0
+    height: 100vh
+    width: 100vw
+    background-color: $brand-black
+    transition: background-color .5s
+    .full-image
+      width: 100vw
+      bottom: 34vh
+      position: absolute
+      opacity: 100%
+      left: 0
+    .close
+      position: absolute
+      bottom: 14vh
+      left: 48vw
+      width: 5vw
+    .controls
+      position: absolute
+      bottom: 16vh
+      width: 10vw
+      &:nth-of-type(2)
+        left: 10vw
+        transform: rotate(90deg)
+      &:nth-of-type(3)
+        right: 10vw
+        transform: rotate(-90deg)
