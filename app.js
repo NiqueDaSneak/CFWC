@@ -18,6 +18,10 @@ app.get('/privacy_policy', function(req,res){
   res.render('privacy_policy')
 });
 
+app.get('/terms_of_use', function(req,res){
+  res.render('terms_of_use')
+});
+
 // SET UP SERVER ENVIRONMENT
 var port = process.env.PORT || 3000;
 app.listen(port, function(){

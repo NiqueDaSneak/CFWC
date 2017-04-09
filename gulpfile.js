@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const html2pug = require('gulp-html2pug');
 const sass = require('gulp-sass');
 const gutil = require('gulp-util');
 const postcss = require('gulp-postcss');
