@@ -1,3 +1,26 @@
+footer {
+  font-weight: 300;
+  background-color: #F06300;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: .5vh;
+  box-shadow: 0px -3px 5px 0px black; }
+  footer .logo-holder a img {
+    width: 15vw;
+    padding-left: 4vw;
+    padding-right: 4vw; }
+  footer .text-links {
+    padding-top: 4vh; }
+    footer .text-links a {
+      text-decoration: none;
+      color: white;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      font-size: 4vw; }
+    footer .text-links p {
+      font-size: 4vw;
+      padding-top: 2vh; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -8,18 +31,14 @@ body {
   color: white; }
 
 .landing-image {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   background-image: url("/images/landing-mobile.png");
   background-position: center;
   position: absolute;
   z-index: -1;
   height: 100vh;
   width: 100vw;
-  -webkit-transition: -webkit-filter 12s;
-  transition: -webkit-filter 12s;
-  transition: filter 12s;
-  transition: filter 12s, -webkit-filter 12s; }
+  transition: filter 12s; }
 
 .landing-screen {
   font-weight: 300;
@@ -61,13 +80,11 @@ body {
     top: 0;
     width: 100vw;
     z-index: 1;
-    -webkit-transition: background-color .5s;
     transition: background-color .5s;
     padding-top: 3vh;
     padding-bottom: 3vh; }
     .landing-screen .header-active img {
       width: 22vw;
-      -webkit-transition: width .7s;
       transition: width .7s; }
   .landing-screen .down-chevron {
     position: absolute;
@@ -117,26 +134,26 @@ body {
     border: 0.1vh solid #F06300;
     margin-bottom: 7vh; }
 
-.footer {
+footer {
   font-weight: 300;
   background-color: #F06300;
   text-align: center;
   padding-top: 3vh;
   padding-bottom: .5vh;
   box-shadow: 0px -3px 5px 0px black; }
-  .footer .logo-holder a img {
+  footer .logo-holder a img {
     width: 15vw;
     padding-left: 4vw;
     padding-right: 4vw; }
-  .footer .text-links {
+  footer .text-links {
     padding-top: 4vh; }
-    .footer .text-links a {
+    footer .text-links a {
       text-decoration: none;
       color: white;
       padding-left: 3vw;
       padding-right: 3vw;
       font-size: 4vw; }
-    .footer .text-links p {
+    footer .text-links p {
       font-size: 4vw;
       padding-top: 2vh; }
 
@@ -168,7 +185,6 @@ iframe {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  -webkit-transition: background-color .5s;
   transition: background-color .5s; }
   .overlay.active .full-image {
     width: 100vw;
@@ -187,9 +203,7 @@ iframe {
     width: 10vw; }
     .overlay.active .controls:nth-of-type(2) {
       left: 10vw;
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg); }
+      transform: rotate(90deg); }
     .overlay.active .controls:nth-of-type(3) {
       right: 10vw;
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
+      transform: rotate(-90deg); }
