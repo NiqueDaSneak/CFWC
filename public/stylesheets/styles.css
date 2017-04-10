@@ -9,6 +9,11 @@ footer {
     width: 15vw;
     padding-left: 4vw;
     padding-right: 4vw; }
+  @media only screen and (min-width: 415px) {
+    footer .logo-holder a img {
+      width: 8vw;
+      padding-left: 2vw;
+      padding-right: 2vw; } }
   footer .text-links {
     padding-top: 4vh; }
     footer .text-links a {
@@ -17,9 +22,16 @@ footer {
       padding-left: 3vw;
       padding-right: 3vw;
       font-size: 4vw; }
+    @media only screen and (min-width: 415px) {
+      footer .text-links a {
+        font-size: 2vw; } }
     footer .text-links p {
       font-size: 4vw;
       padding-top: 2vh; }
+    @media only screen and (min-width: 415px) {
+      footer .text-links p {
+        padding-top: 0;
+        font-size: 1.5vw; } }
 
 .landing-image {
   -webkit-filter: grayscale(100%);
@@ -35,6 +47,12 @@ footer {
   transition: filter 12s;
   transition: filter 12s, -webkit-filter 12s; }
 
+@media only screen and (min-width: 415px) {
+  .landing-image {
+    background-image: url("/images/landing-desktop.png");
+    background-repeat: no-repeat;
+    width: 100%; } }
+
 .landing-screen {
   font-weight: 300;
   text-align: center;
@@ -44,22 +62,40 @@ footer {
     text-shadow: 0px 3px 3px black; }
     .landing-screen span:nth-of-type(1), .landing-screen span:nth-of-type(2) {
       font-size: 10vw; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(1), .landing-screen span:nth-of-type(2) {
+        font-size: 5vw; } }
     .landing-screen span:nth-of-type(3), .landing-screen span:nth-of-type(4) {
       font-size: 8vw; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(3), .landing-screen span:nth-of-type(4) {
+        font-size: 4vw; } }
     .landing-screen span:nth-of-type(5), .landing-screen span:nth-of-type(6) {
       font-size: 7vw; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(5), .landing-screen span:nth-of-type(6) {
+        font-size: 3vw; } }
     .landing-screen span:nth-of-type(1) {
       width: 100%;
       position: absolute;
       bottom: 50vh; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(1) {
+        bottom: 56vh; } }
     .landing-screen span:nth-of-type(2) {
       width: 100%;
       position: absolute;
       bottom: 43vh; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(2) {
+        bottom: 46vh; } }
     .landing-screen span:nth-of-type(3) {
       width: 100%;
       position: absolute;
       bottom: 30vh; }
+    @media only screen and (min-width: 415px) {
+      .landing-screen span:nth-of-type(3) {
+        bottom: 32vh; } }
     .landing-screen span:nth-of-type(4) {
       width: 100%;
       position: absolute;
@@ -85,11 +121,21 @@ body {
   height: 100vh;
   color: white; }
 
+@media only screen and (min-width: 415px) {
+  body {
+    background-image: url("/images/body-bg-desktop.png"); } }
+
 .email-capture {
   text-align: center;
   margin-top: 6vh; }
+  @media only screen and (min-width: 415px) {
+    .email-capture .email-capture {
+      margin-top: 10vh; } }
   .email-capture p {
     font-size: 6vw; }
+  @media only screen and (min-width: 415px) {
+    .email-capture p {
+      font-size: 3vw; } }
   .email-capture input[type=text] {
     outline: none;
     width: 80vw;
@@ -99,6 +145,11 @@ body {
     font-size: 4vw;
     text-align: center;
     background-color: #D8D8D8; }
+  @media only screen and (min-width: 415px) {
+    .email-capture input[type=text] {
+      width: 40vw;
+      font-size: 2vw;
+      height: 4.8vh; } }
   .email-capture input[type=submit] {
     background-color: #F06300;
     border-style: none;
@@ -111,6 +162,12 @@ body {
     padding-bottom: 1.5vh;
     border-radius: 1.5vw;
     box-shadow: 0px 3px 15px 0px black; }
+  @media only screen and (min-width: 415px) {
+    .email-capture input[type=submit] {
+      margin-top: 4vw;
+      font-size: 2vw;
+      padding-left: 6vw;
+      padding-right: 6vw; } }
 
 .header-active {
   text-align: center;
@@ -129,9 +186,17 @@ body {
     -webkit-transition: width .7s;
     transition: width .7s; }
 
+@media only screen and (min-width: 415px) {
+  .header-active img {
+    width: 10vw; } }
+
 .logo-big {
   padding-top: 8vh;
   width: 65vw; }
+
+@media only screen and (min-width: 415px) {
+  .logo-big {
+    width: 20vw; } }
 
 .video-responsive {
   padding-bottom: 56.25%;
@@ -139,6 +204,11 @@ body {
   height: 0;
   margin-left: 10vw;
   margin-right: 10vw; }
+
+@media only screen and (min-width: 415px) {
+  .video-responsive {
+    margin-left: 20vw;
+    margin-right: 20vw; } }
 
 iframe {
   left: 0;
@@ -192,10 +262,16 @@ iframe {
   margin-top: 10vh; }
   .video span, .photos span, .header span {
     font-size: 8vw; }
+  @media only screen and (min-width: 415px) {
+    .video span, .photos span, .header span {
+      font-size: 5vw; } }
   .video hr, .photos hr, .header hr {
     width: 80vw;
     border: 0.1vh solid #F06300;
     margin-bottom: 7vh; }
+  @media only screen and (min-width: 415px) {
+    .video hr, .photos hr, .header hr {
+      width: 60vw; } }
 
 .privacy-policy {
   padding-left: 10vw;
@@ -205,3 +281,6 @@ iframe {
     color: #F06300; }
   .privacy-policy header {
     text-align: center; }
+
+a {
+  cursor: pointer; }

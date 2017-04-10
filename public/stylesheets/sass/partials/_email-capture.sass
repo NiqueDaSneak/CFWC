@@ -1,8 +1,14 @@
 .email-capture
   text-align: center
   margin-top: 6vh
+  @include responsive
+    .email-capture
+      margin-top: 10vh
   p
     font-size: 6vw
+  @include responsive
+    p
+      font-size: 3vw
   input[type=text]
     outline: none
     width: 80vw
@@ -12,6 +18,11 @@
     font-size: 4vw
     text-align: center
     background-color: $brand-grey
+  @include responsive
+    input[type=text]
+      width: 40vw
+      font-size: 2vw
+      height: 4.8vh
   input[type=submit]
     background-color: $brand-orange
     border-style: none
@@ -24,3 +35,9 @@
     padding-bottom: 1.5vh
     border-radius: 1.5vw
     box-shadow: 0px 3px 15px 0px $brand-black
+  @include responsive
+    input[type=submit]
+      margin-top: 4vw
+      font-size: 2vw
+      padding-left: 6vw
+      padding-right: 6vw
