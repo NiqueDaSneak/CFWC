@@ -91,6 +91,7 @@ body {
   .email-capture p {
     font-size: 6vw; }
   .email-capture input[type=text] {
+    outline: none;
     width: 80vw;
     height: 4.3vh;
     border-radius: 1.5vw;
