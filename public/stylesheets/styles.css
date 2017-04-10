@@ -119,8 +119,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
-  color: white;
-  -webkit-appearance: none; }
+  color: white; }
 
 @media only screen and (min-width: 415px) {
   body {
