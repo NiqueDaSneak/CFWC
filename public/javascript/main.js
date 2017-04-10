@@ -1,6 +1,8 @@
 'use strict'
 
 $(document).ready(function() {
+
+    // LANDING SCREEN
     var scrolled = false
 
     $('.landing-image').css('filter', 'grayscale(0%)');
@@ -8,7 +10,6 @@ $(document).ready(function() {
     function animateHeader() {
         if (scrolled === true) {
             $('header').addClass('header-active').children().removeClass('logo-big');
-            // $('.landing-image').fadeOut(500);
         }
     }
 
@@ -17,51 +18,57 @@ $(document).ready(function() {
         animateHeader()
     });
 
-
     // GALLERY FUNCTIONALITY
     (function loadThumbnails() {
-      var path = "gallery/thumbs"
-      for (var i = 1; i <= 10; i++) {
-        $('.gallery').append('<img class="thumbs" data-index="' + i + '" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
-      }
+        var path = "gallery/thumbs"
+        for (var i = 1; i <= 10; i++) {
+            $('.gallery').append('<img class="thumbs" data-index="' + i + '" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
+        }
     })();
 
     $('.overlay').hide();
 
-    $('.gallery').click(function(){
-      $('.overlay').addClass('active').append('<img class="full-image" data-index="' + event.target.dataset.index + '" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(650);
+    $('.gallery').click(function() {
+        $('.overlay').addClass('active').append('<img class="full-image" data-index="' + event.target.dataset.index + '" src="gallery/full/image' + event.target.dataset.index + '.jpg" alt="Gallery Image">').hide().fadeIn(650);
     });
 
-    $('.close').click(function(){
-      $('.full-image').remove();
-      $('.overlay').removeClass('active');
-      $('.overlay').hide();
+    $('.close').click(function() {
+        $('.full-image').remove();
+        $('.overlay').removeClass('active');
+        $('.overlay').hide();
     });
 
     // LEFT ARROW
-    $('img.controls:nth-of-type(2)').click(function(){
-      var currentIndex = $('.full-image').data('index');
-      if (currentIndex === 1) {
-        $('.full-image').remove();
-        $('.overlay').removeClass('active');
-        $('.overlay').hide();
-      } else {
-        $('.full-image').remove();
-        $('.overlay').append('<img class="full-image" data-index="' + (currentIndex - 1) + '" src="gallery/full/image' + (currentIndex - 1) + '.jpg" alt="Gallery Image">');
-      }
+    $('img.controls:nth-of-type(2)').click(function() {
+        var currentIndex = $('.full-image').data('index');
+        if (currentIndex === 1) {
+            $('.full-image').remove();
+            $('.overlay').removeClass('active');
+            $('.overlay').hide();
+        } else {
+            $('.full-image').remove();
+            $('.overlay').append('<img class="full-image" data-index="' + (currentIndex - 1) + '" src="gallery/full/image' + (currentIndex - 1) + '.jpg" alt="Gallery Image">');
+        }
     });
 
     // RIGHT ARROW
-    $('img.controls:nth-of-type(3)').click(function(){
-      var currentIndex = $('.full-image').data('index');
-      if (currentIndex === 10) {
-        $('.full-image').remove();
-        $('.overlay').removeClass('active');
-        $('.overlay').hide();
-      } else {
-        $('.full-image').remove();
-        $('.overlay').append('<img class="full-image" data-index="' + (currentIndex + 1) + '" src="gallery/full/image' + (currentIndex + 1) + '.jpg" alt="Gallery Image">');
-      }
+    $('img.controls:nth-of-type(3)').click(function() {
+        var currentIndex = $('.full-image').data('index');
+        if (currentIndex === 10) {
+            $('.full-image').remove();
+            $('.overlay').removeClass('active');
+            $('.overlay').hide();
+        } else {
+            $('.full-image').remove();
+            $('.overlay').append('<img class="full-image" data-index="' + (currentIndex + 1) + '" src="gallery/full/image' + (currentIndex + 1) + '.jpg" alt="Gallery Image">');
+        }
+    });
+
+    // EMAIL CAPTURE
+    $('form').submit(function(){
+      console.log($("input[type='text']").val());
+      
+      return false
     });
 
 });
