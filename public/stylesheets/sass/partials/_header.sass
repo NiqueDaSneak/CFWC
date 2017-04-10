@@ -12,8 +12,14 @@
   img
     width: 22vw
     transition: width .7s
+@include responsive
+  .header-active
+    img
+      width: 10vw
 
 .logo-big
   padding-top: 8vh
   width: 65vw
-//
+@include responsive
+  .logo-big
+    width: 20vw

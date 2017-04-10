@@ -3,7 +3,13 @@
   margin-top: 10vh
   span
     font-size: 8vw
+  @include responsive
+    span
+      font-size: 5vw
   hr
     width: 80vw
     border: .1vh solid $brand-orange
     margin-bottom: 7vh
+  @include responsive
+    hr
+      width: 60vw
