@@ -67,8 +67,15 @@ $(document).ready(function() {
     // EMAIL CAPTURE
     $('form').submit(function(){
       console.log($("input[type='text']").val());
-      
       return false
     });
+
+// DETECT iOS
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      $('body').css({'background-image': "url('/images/body-bg-iphone.png')", 'background-attachment': 'inherit'});
+      console.log('iPhone');
+    } else {
+      console.log('not iPhone');
+    }
 
 });
