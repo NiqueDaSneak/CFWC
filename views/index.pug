@@ -29,8 +29,10 @@ html
       img.down-chevron(src='images/down-chevron.svg', alt='')
     .email-capture
       p Get updates &amp; news
-      form(action='#', method='post')
-        input(type='text', name='_replyto', value='', placeholder='massimo.bottura@mail.com')
+      form(action='/emails', method='post')
+        input(type='text', name='full_name', value='', placeholder='Massimo Bottura')
+        |  
+        input(type='text', name='email', value='', placeholder='massimo.bottura@mail.com')
         div
           input(type='submit', name='submit', value='Join')
     .video
