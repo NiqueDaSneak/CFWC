@@ -65,17 +65,23 @@ $(document).ready(function() {
     });
 
     // EMAIL CAPTURE
-    $('form').submit(function(){
-      console.log($("input[type='text']").val());
-      return false
+    var socket = io.connect();
+    console.log('Server connected to client!');
+    $('form').submit(function() {
+        var user = {}
+        user.fullName = $("input[type='text']:nth-of-type(1)").val()
+        user.email = $("input[type='text']:nth-of-type(2)").val()
+        console.log(user);
+        socket.emit('newUser', {user: user});
+        return false
     });
 
-// DETECT iOS
-    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      $('body').css({'background-image': "url('/images/body-bg-iphone.png')", 'background-attachment': 'inherit'});
-      console.log('iPhone');
+    // DETECT iOS
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+        $('body').css({'background-image': "url('/images/body-bg-iphone.png')", 'background-attachment': 'inherit'});
+        console.log('iPhone');
     } else {
-      console.log('not iPhone');
+        console.log('not iPhone');
     }
 
 });

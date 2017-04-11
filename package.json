@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/NiqueDaSneak/CFWC#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "pug": "^2.0.0-beta11"
+    "pug": "^2.0.0-beta11",
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

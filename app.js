@@ -2,8 +2,9 @@
 
 //DEPENDENCIES
 const express = require('express');
-
 const app = express();
+var server = require('http').createServer(app);
+const io = require('socket.io')(server);
 
 app.use(express.static('public'));
 
@@ -26,9 +27,17 @@ app.post('/emails', function(req,res){
 
 });
 
+// SOCKET
+io.on('connection', (socket) => {
+  console.log('Client connected!');
+  socket.on('newUser', (user) => {
+    console.log(user.user.email);
+  });
+});
+
 // SET UP SERVER ENVIRONMENT
 var port = process.env.PORT || 3000;
-app.listen(port, function(){
+server.listen(port, function(){
     console.log('Server running on port ' + port);
 });
 
