@@ -20,11 +20,21 @@
       position: absolute
       opacity: 100%
       left: 0
+    @include responsive
+      .full-image
+        // max-width: 50vw
+        width: 50vw
+        bottom: 0
+        margin-left: 25vw
     .close
       position: absolute
       bottom: 14vh
-      left: 48vw
+      left: 49vw
       width: 5vw
+    @include responsive
+      .close
+        width: 2vw
+        bottom: 68vh
     .controls
       position: absolute
       bottom: 16vh
@@ -32,6 +42,16 @@
       &:nth-of-type(2)
         left: 10vw
         transform: rotate(90deg)
+      @include responsive
+        &:nth-of-type(2)
+          width: 4vw
+          bottom: 70.5vh
+          left: 38vw
       &:nth-of-type(3)
         right: 10vw
         transform: rotate(-90deg)
+      @include responsive
+        &:nth-of-type(3)
+          width: 4vw
+          bottom: 70.5vh
+          right: 38vw
