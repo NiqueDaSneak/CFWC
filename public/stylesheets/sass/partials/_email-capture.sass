@@ -19,10 +19,14 @@
     text-align: center
     background-color: $brand-grey
     -webkit-appearance: none
+  input[type=text]:nth-of-type(1)
+    margin-bottom: 3vh
   input[type=text]:nth-of-type(2)
-    margin-top: 3vh
+    display: block
+    margin: 0 auto
   @include responsive
     input[type=text]
+      border-radius: 1.1vw
       width: 40vw
       font-size: 2vw
       height: 4.8vh
