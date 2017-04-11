@@ -15,11 +15,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/privacy_policy', function(req,res){
-  res.render('privacy_policy')
+  res.render('privacy_policy');
 });
 
 app.get('/terms_of_use', function(req,res){
-  res.render('terms_of_use')
+  res.render('terms_of_use');
+});
+
+app.post('/emails', function(req,res){
+
 });
 
 // SET UP SERVER ENVIRONMENT
