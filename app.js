@@ -7,8 +7,10 @@ var server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const db = require('diskdb');
 db.connect('db', ['users']);
+const users = require('./db/users');
 
 app.use(express.static('public'));
+app.set('json spaces', 4);
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
@@ -25,8 +27,8 @@ app.get('/terms_of_use', function(req,res){
   res.render('terms_of_use');
 });
 
-app.post('/emails', function(req,res){
-
+app.get('/emails', function(req,res){
+  res.json(users)
 });
 
 // SOCKET
