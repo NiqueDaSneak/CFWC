@@ -5,6 +5,8 @@ const express = require('express');
 const app = express();
 var server = require('http').createServer(app);
 const io = require('socket.io')(server);
+const db = require('diskdb');
+db.connect('db', ['users']);
 
 app.use(express.static('public'));
 
@@ -31,8 +33,9 @@ app.post('/emails', function(req,res){
 io.on('connection', (socket) => {
   console.log('Client connected!');
   socket.on('newUser', (user) => {
-    console.log('this should be user data');
-    console.log(user.user.email);
+    user.user.date = Date()
+    db.users.save(user.user)
+    console.log('User saved!');
   });
 });
 
