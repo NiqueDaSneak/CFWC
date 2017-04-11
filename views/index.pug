@@ -5,6 +5,7 @@ html
     meta(charset='utf-8')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400', rel='stylesheet')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='/socket.io/socket.io.js')
     meta(name='theme-color', content='#F06300')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='icon', href='images/favicon.ico')
@@ -29,8 +30,10 @@ html
       img.down-chevron(src='images/down-chevron.svg', alt='')
     .email-capture
       p Get updates &amp; news
-      form(action='#', method='post')
-        input(type='text', name='_replyto', value='', placeholder='massimo.bottura@mail.com')
+      form(action='/emails', method='post')
+        input(type='text', name='full_name', value='', placeholder='Massimo Bottura')
+        |  
+        input(type='text', name='email', value='', placeholder='massimo.bottura@mail.com')
         div
           input(type='submit', name='submit', value='Join')
     .video
