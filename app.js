@@ -31,6 +31,7 @@ app.post('/emails', function(req,res){
 io.on('connection', (socket) => {
   console.log('Client connected!');
   socket.on('newUser', (user) => {
+    console.log('this should be user data');
     console.log(user.user.email);
   });
 });
