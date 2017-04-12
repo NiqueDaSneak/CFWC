@@ -8,7 +8,7 @@
   width: 100vw
   transition: filter 12s
 
-@include responsive
+@include desktop
   .landing-image
     background-image: url('/images/landing-desktop.png')
     background-repeat: no-repeat
@@ -23,38 +23,38 @@
     text-shadow: 0px 3px 3px $brand-black
     &:nth-of-type(1), &:nth-of-type(2)
       font-size: 10vw
-    @include responsive
+    @include desktop
       &:nth-of-type(1), &:nth-of-type(2)
         font-size: 5vw
     &:nth-of-type(3), &:nth-of-type(4)
       font-size: 8vw
-    @include responsive
+    @include desktop
       &:nth-of-type(3), &:nth-of-type(4)
         font-size: 4vw
     &:nth-of-type(5), &:nth-of-type(6)
       font-size: 7vw
-    @include responsive
+    @include desktop
       &:nth-of-type(5), &:nth-of-type(6)
         font-size: 3vw
     &:nth-of-type(1)
       width: 100%
       position: absolute
       bottom: 50vh
-    @include responsive
+    @include desktop
       &:nth-of-type(1)
         bottom: 56vh
     &:nth-of-type(2)
       width: 100%
       position: absolute
       bottom: 43vh
-    @include responsive
+    @include desktop
       &:nth-of-type(2)
         bottom: 46vh
     &:nth-of-type(3)
       width: 100%
       position: absolute
       bottom: 30vh
-    @include responsive
+    @include desktop
       &:nth-of-type(3)
         bottom: 32vh
     &:nth-of-type(4)
