@@ -73,6 +73,8 @@ $(document).ready(function() {
         user.email = $("input[type='text']:nth-of-type(2)").val()
         console.log(user);
         socket.emit('newUser', {user: user});
+        $('.email-capture').children().css('opacity', '0')
+        $('.email-capture').prepend('<p>Thank you! Look for a welcome email from us soon!</p>');
         return false
     });
 
