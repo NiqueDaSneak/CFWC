@@ -15,43 +15,67 @@
     background-color: $brand-black
     transition: background-color .5s
     .full-image
+      max-width: 1144px
       width: 100vw
       bottom: 34vh
       position: absolute
       opacity: 100%
       left: 0
+    @include tablet
+      .full-image
+        width: 74vw
+        bottom : 0
+        margin-left: 13vw
     @include desktop
       .full-image
-        // max-width: 50vw
-        width: 50vw
+        width: 68vw
         bottom: 0
-        margin-left: 25vw
+        margin-left: 16vw
     .close
+      z-index: 1
       position: absolute
       bottom: 14vh
       left: 49vw
       width: 5vw
+    @include tablet
+      .close
+        width: 3vw
+        background-color: black
     @include desktop
       .close
         width: 2vw
         bottom: 68vh
+        background-color: $brand-black
     .controls
+      z-index: 1
       position: absolute
       bottom: 16vh
       width: 10vw
       &:nth-of-type(2)
         left: 10vw
         transform: rotate(90deg)
+      @include tablet
+        &:nth-of-type(2)
+          width: 6vw
+          left: 20vw
+          background-color: $brand-black
       @include desktop
         &:nth-of-type(2)
           width: 4vw
           bottom: 70.5vh
           left: 38vw
+          background-color: $brand-black
       &:nth-of-type(3)
         right: 10vw
         transform: rotate(-90deg)
+      @include tablet
+        &:nth-of-type(3)
+          width: 6vw
+          right: 20vw
+          background-color: $brand-black
       @include desktop
         &:nth-of-type(3)
           width: 4vw
           bottom: 70.5vh
           right: 38vw
+          background-color: $brand-black

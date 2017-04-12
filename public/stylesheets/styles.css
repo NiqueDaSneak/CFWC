@@ -9,7 +9,7 @@ footer {
     width: 15vw;
     padding-left: 4vw;
     padding-right: 4vw; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     footer .logo-holder a img {
       width: 8vw;
       padding-left: 2vw;
@@ -22,13 +22,13 @@ footer {
       padding-left: 3vw;
       padding-right: 3vw;
       font-size: 4vw; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       footer .text-links a {
         font-size: 2vw; } }
     footer .text-links p {
       font-size: 4vw;
       padding-top: 2vh; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       footer .text-links p {
         padding-top: 0;
         font-size: 1.5vw; } }
@@ -47,7 +47,11 @@ footer {
   transition: filter 12s;
   transition: filter 12s, -webkit-filter 12s; }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (max-width: 1023px) and (min-width: 414px) {
+  .landing-image {
+    background-image: url("/images/landing-desktop.png"); } }
+
+@media only screen and (min-width: 1024px) {
   .landing-image {
     background-image: url("/images/landing-desktop.png");
     background-repeat: no-repeat;
@@ -62,38 +66,38 @@ footer {
     text-shadow: 0px 3px 3px black; }
     .landing-screen span:nth-of-type(1), .landing-screen span:nth-of-type(2) {
       font-size: 10vw; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(1), .landing-screen span:nth-of-type(2) {
         font-size: 5vw; } }
     .landing-screen span:nth-of-type(3), .landing-screen span:nth-of-type(4) {
       font-size: 8vw; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(3), .landing-screen span:nth-of-type(4) {
         font-size: 4vw; } }
     .landing-screen span:nth-of-type(5), .landing-screen span:nth-of-type(6) {
       font-size: 7vw; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(5), .landing-screen span:nth-of-type(6) {
         font-size: 3vw; } }
     .landing-screen span:nth-of-type(1) {
       width: 100%;
       position: absolute;
       bottom: 50vh; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(1) {
         bottom: 56vh; } }
     .landing-screen span:nth-of-type(2) {
       width: 100%;
       position: absolute;
       bottom: 43vh; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(2) {
         bottom: 46vh; } }
     .landing-screen span:nth-of-type(3) {
       width: 100%;
       position: absolute;
       bottom: 30vh; }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (min-width: 1024px) {
       .landing-screen span:nth-of-type(3) {
         bottom: 32vh; } }
     .landing-screen span:nth-of-type(4) {
@@ -121,7 +125,11 @@ body {
   height: 100vh;
   color: white; }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (max-width: 1023px) and (min-width: 414px) {
+  body {
+    background-image: url("/images/body-bg-desktop.png"); } }
+
+@media only screen and (min-width: 1024px) {
   body {
     background-image: url("/images/body-bg-desktop.png"); } }
 
@@ -133,12 +141,12 @@ body {
   text-align: center;
   margin-top: 6vh;
   opacity: 1; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .email-capture .email-capture {
       margin-top: 10vh; } }
   .email-capture p {
     font-size: 6vw; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .email-capture p {
       font-size: 3vw; } }
   .email-capture input[type=text] {
@@ -156,7 +164,7 @@ body {
   .email-capture input[type=text]:nth-of-type(2) {
     display: block;
     margin: 0 auto; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .email-capture input[type=text] {
       border-radius: 1.1vw;
       width: 40vw;
@@ -175,7 +183,7 @@ body {
     border-radius: 1.5vw;
     box-shadow: 0px 3px 15px 0px black;
     -webkit-appearance: none; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .email-capture input[type=submit] {
       margin-top: 4vw;
       font-size: 2vw;
@@ -199,7 +207,7 @@ body {
     -webkit-transition: width .7s;
     transition: width .7s; }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 1024px) {
   .header-active img {
     width: 10vw; } }
 
@@ -207,7 +215,7 @@ body {
   padding-top: 8vh;
   width: 65vw; }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 1024px) {
   .logo-big {
     width: 20vw; } }
 
@@ -218,7 +226,7 @@ body {
   margin-left: 10vw;
   margin-right: 10vw; }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 1024px) {
   .video-responsive {
     margin-left: 20vw;
     margin-right: 20vw; } }
@@ -247,26 +255,39 @@ iframe {
   -webkit-transition: background-color .5s;
   transition: background-color .5s; }
   .overlay.active .full-image {
+    max-width: 1144px;
     width: 100vw;
     bottom: 34vh;
     position: absolute;
     opacity: 100%;
     left: 0; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (max-width: 1023px) and (min-width: 414px) {
     .overlay.active .full-image {
-      width: 50vw;
+      width: 74vw;
       bottom: 0;
-      margin-left: 25vw; } }
+      margin-left: 13vw; } }
+  @media only screen and (min-width: 1024px) {
+    .overlay.active .full-image {
+      width: 68vw;
+      bottom: 0;
+      margin-left: 16vw; } }
   .overlay.active .close {
+    z-index: 1;
     position: absolute;
     bottom: 14vh;
     left: 49vw;
     width: 5vw; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (max-width: 1023px) and (min-width: 414px) {
+    .overlay.active .close {
+      width: 3vw;
+      background-color: black; } }
+  @media only screen and (min-width: 1024px) {
     .overlay.active .close {
       width: 2vw;
-      bottom: 68vh; } }
+      bottom: 68vh;
+      background-color: black; } }
   .overlay.active .controls {
+    z-index: 1;
     position: absolute;
     bottom: 16vh;
     width: 10vw; }
@@ -274,34 +295,46 @@ iframe {
       left: 10vw;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (max-width: 1023px) and (min-width: 414px) {
+      .overlay.active .controls:nth-of-type(2) {
+        width: 6vw;
+        left: 20vw;
+        background-color: black; } }
+    @media only screen and (min-width: 1024px) {
       .overlay.active .controls:nth-of-type(2) {
         width: 4vw;
         bottom: 70.5vh;
-        left: 38vw; } }
+        left: 38vw;
+        background-color: black; } }
     .overlay.active .controls:nth-of-type(3) {
       right: 10vw;
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }
-    @media only screen and (min-width: 415px) {
+    @media only screen and (max-width: 1023px) and (min-width: 414px) {
+      .overlay.active .controls:nth-of-type(3) {
+        width: 6vw;
+        right: 20vw;
+        background-color: black; } }
+    @media only screen and (min-width: 1024px) {
       .overlay.active .controls:nth-of-type(3) {
         width: 4vw;
         bottom: 70.5vh;
-        right: 38vw; } }
+        right: 38vw;
+        background-color: black; } }
 
 .video, .photos, .header {
   text-align: center;
   margin-top: 10vh; }
   .video span, .photos span, .header span {
     font-size: 8vw; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .video span, .photos span, .header span {
       font-size: 5vw; } }
   .video hr, .photos hr, .header hr {
     width: 80vw;
     border: 0.1vh solid #F06300;
     margin-bottom: 7vh; }
-  @media only screen and (min-width: 415px) {
+  @media only screen and (min-width: 1024px) {
     .video hr, .photos hr, .header hr {
       width: 60vw; } }
 
