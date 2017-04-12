@@ -21,7 +21,7 @@ $(document).ready(function() {
     // GALLERY FUNCTIONALITY
     (function loadThumbnails() {
         var path = "gallery/thumbs"
-        for (var i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 12; i++) {
             $('.gallery').append('<img class="thumbs" data-index="' + i + '" src=' + path + '/image' + i + '.jpg ' + 'alt="Gallery Image">')
         }
     })();
@@ -54,7 +54,7 @@ $(document).ready(function() {
     // RIGHT ARROW
     $('img.controls:nth-of-type(3)').click(function() {
         var currentIndex = $('.full-image').data('index');
-        if (currentIndex === 10) {
+        if (currentIndex === 12) {
             $('.full-image').remove();
             $('.overlay').removeClass('active');
             $('.overlay').hide();
