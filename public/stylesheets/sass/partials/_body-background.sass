@@ -6,6 +6,9 @@ body
   background-repeat: no-repeat
   height: 100vh
   color: $brand-white
-@include responsive
+@include tablet
+  body
+    background-image: url('/images/body-bg-desktop.png')
+@include desktop
   body
     background-image: url('/images/body-bg-desktop.png')
