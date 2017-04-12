@@ -125,9 +125,14 @@ body {
   body {
     background-image: url("/images/body-bg-desktop.png"); } }
 
+.email-capture * {
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s; }
+
 .email-capture {
   text-align: center;
-  margin-top: 6vh; }
+  margin-top: 6vh;
+  opacity: 1; }
   @media only screen and (min-width: 415px) {
     .email-capture .email-capture {
       margin-top: 10vh; } }
