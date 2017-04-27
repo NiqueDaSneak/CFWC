@@ -245,6 +245,9 @@ iframe {
     margin-right: 10vw; }
     .photos .gallery .thumbs {
       width: 40vw; }
+      @media only screen and (min-width: 1024px) {
+        .photos .gallery .thumbs {
+          width: 17vw; } }
 
 .overlay.active {
   position: fixed;
