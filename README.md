@@ -1,0 +1,1 @@
+This site is for promoting the local Cincinnati festival, Cincinnati Food & Wine Classic. I took the extremely page heavy site, and for phase 1 boiled it down into one page. Later iterations will include a full menu as well as additional pages for showing off chefs/sommeliers who will attend.
