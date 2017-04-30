@@ -1,3 +1,7 @@
+
+header
+  a
+    display: none
 .header-active
   text-align: center
   background-color: $brand-white
@@ -9,9 +13,18 @@
   transition: background-color .5s
   padding-top: 3vh
   padding-bottom: 3vh
+  a
+    display: inline
+    padding-right: 5vw
+    font-size: 3.2vw
+    text-decoration: none
+    color: $brand-orange
   img
-    width: 22vw
+    width: 15vw
     transition: width .7s
+    vertical-align: middle
+    padding-right: 5vw
+    padding-left: 5vw
 @include desktop
   .header-active
     img

@@ -190,6 +190,9 @@ body {
       padding-left: 6vw;
       padding-right: 6vw; } }
 
+header a {
+  display: none; }
+
 .header-active {
   text-align: center;
   background-color: white;
@@ -202,10 +205,19 @@ body {
   transition: background-color .5s;
   padding-top: 3vh;
   padding-bottom: 3vh; }
+  .header-active a {
+    display: inline;
+    padding-right: 5vw;
+    font-size: 3.2vw;
+    text-decoration: none;
+    color: #F06300; }
   .header-active img {
-    width: 22vw;
+    width: 15vw;
     -webkit-transition: width .7s;
-    transition: width .7s; }
+    transition: width .7s;
+    vertical-align: middle;
+    padding-right: 5vw;
+    padding-left: 5vw; }
 
 @media only screen and (min-width: 1024px) {
   .header-active img {
