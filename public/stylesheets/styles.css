@@ -211,6 +211,9 @@ header a {
     font-size: 3.2vw;
     text-decoration: none;
     color: #F06300; }
+    @media only screen and (min-width: 1024px) {
+      .header-active a {
+        font-size: 2vw; } }
   .header-active img {
     width: 15vw;
     -webkit-transition: width .7s;
