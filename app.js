@@ -3,11 +3,21 @@
 //DEPENDENCIES
 const express = require('express');
 const app = express();
+
 var server = require('http').createServer(app);
 const io = require('socket.io')(server);
+
 const db = require('diskdb');
 db.connect('db', ['users']);
 const users = require('./db/users');
+
+const contentful = require('contentful')
+const SPACE_ID = '91uae8dux59i'
+const ACCESS_TOKEN = '449aaeea181c81351d565c1fa14580ac9d66e719926a3b66440e171e0cdb4563'
+const client = contentful.createClient({
+  space: SPACE_ID,
+  accessToken: ACCESS_TOKEN
+})
 
 app.use(express.static('public'));
 app.set('json spaces', 4);
