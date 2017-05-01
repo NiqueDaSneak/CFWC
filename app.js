@@ -15,19 +15,23 @@ app.set('json spaces', 4);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
-app.get('/', function (req, res) {
-  res.render('index');
+app.get('/', (req, res) => {
+  res.render('index')
 });
 
-app.get('/privacy_policy', function(req,res){
-  res.render('privacy_policy');
+app.get('/privacy_policy', (req, res) => {
+  res.render('privacy_policy')
 });
 
-app.get('/terms_of_use', function(req,res){
-  res.render('terms_of_use');
+app.get('/terms_of_use', (req, res) => {
+  res.render('terms_of_use')
 });
 
-app.get('/emails', function(req,res){
+app.get('/tickets', (req, res) => {
+  res.render('tickets')
+})
+
+app.get('/emails', (req, res) => {
   res.json(users)
 });
 
