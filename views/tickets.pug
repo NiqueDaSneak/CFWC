@@ -29,12 +29,14 @@ html
       .ticket-types
         each ticket in content
           .ticket
-            p= ticket.ticketType
-            a(href='/learn-more') Learn More
-            a(href='#{ticket.ticketLink}') Buy
-            p= ticket.price
-            p= ticket.dateAndTime
-            p= ticket.ticketDescription
+            .left
+              p= ticket.ticketType
+              a(href='/learn-more') Learn More
+              a(href='#{ticket.ticketLink}') Buy
+            .right
+              p= ticket.price
+              p= ticket.dateAndTime
+              p= ticket.ticketDescription
       footer
         .logo-holder
           a(href='https://vimeo.com/citystories')
