@@ -38,7 +38,16 @@ app.get('/terms_of_use', (req, res) => {
 });
 
 app.get('/tickets', (req, res) => {
-  res.render('tickets')
+  var content = []
+  client.getEntries()
+  .then((response) => {
+      for (var i = 0; i < response.items.length; i++) {
+          if (response.items[i].sys.contentType.sys.id === 'tickets') {
+              content.push(response.items[i].fields)
+          }
+      }
+      res.render('tickets', { content: content })
+  })
 })
 
 app.get('/emails', (req, res) => {
