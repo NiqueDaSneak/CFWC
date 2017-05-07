@@ -14,7 +14,8 @@ html
   body
     .landing-screen
       header.header-active
-        img(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
+        a(href='/')
+          img(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
         |  
         a(href='#') About
         |  
@@ -32,7 +33,7 @@ html
             .left
               p= ticket.ticketType
               a(href='/learn-more') Learn More
-              a(href='#{ticket.ticketLink}') Buy
+              a(href=ticket.ticketLink target="_blank") Buy
             .right
               p= ticket.price
               p= ticket.dateAndTime
