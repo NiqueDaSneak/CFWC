@@ -42,7 +42,7 @@ body {
   height: 100vh;
   color: white; }
 
-@media only screen and (max-width: 1023px) and (min-width: 414px) {
+@media only screen and (max-width: 1023px) and (min-width: 415px) {
   body {
     background-image: url("/images/body-bg-desktop.png"); } }
 
@@ -112,6 +112,9 @@ header a {
 
 .header {
   padding-top: 6vh; }
+  @media only screen and (min-width: 1024px) {
+    .header {
+      padding-top: 12vh; } }
   .header span {
     color: #434040; }
 
@@ -123,9 +126,15 @@ header a {
   border: 1px solid #F06300;
   margin-bottom: 4vh;
   margin-left: 5vw;
-  padding: 22px;
+  padding: 20px;
   text-align: center;
   font-weight: 300; }
+  @media only screen and (min-width: 1024px) {
+    .ticket {
+      margin-left: 8.6vw; } }
+  @media only screen and (max-width: 1023px) and (min-width: 415px) {
+    .ticket {
+      margin-left: 7.5vw; } }
   .ticket a {
     text-decoration: none;
     color: #F06300;
@@ -134,27 +143,35 @@ header a {
     border-radius: 8px;
     padding-bottom: 2vh;
     padding-top: 2vh;
-    width: 150px;
+    width: 36vw;
+    font-size: 4vw;
     display: inline-block; }
     .ticket a:first-of-type {
       margin-right: 6vw; }
-  .ticket p:nth-of-type(1) {
-    padding-bottom: 4vh; }
+    @media only screen and (min-width: 1024px) {
+      .ticket a {
+        font-size: 1.4vw;
+        width: 12vw; } }
+    @media only screen and (max-width: 1023px) and (min-width: 415px) {
+      .ticket a {
+        font-size: 2.6vw;
+        width: 22vw; } }
   @media only screen and (min-width: 1024px) {
     .ticket .left, .ticket .right {
       display: inline-block;
       vertical-align: middle; } }
-  .ticket .right {
-    width: 40vw; }
-    @media only screen and (max-width: 1023px) and (min-width: 414px) {
-      .ticket .right {
-        width: inherit; } }
+  @media only screen and (max-width: 1023px) and (min-width: 415px) {
+    .ticket .right {
+      width: inherit; } }
+  @media only screen and (min-width: 1024px) {
+    .ticket .right {
+      margin-left: 4vw;
+      width: 40vw; } }
+  .ticket .right p:nth-of-type(1) {
+    padding-top: 4vh; }
     @media only screen and (min-width: 1024px) {
-      .ticket .right {
-        margin-left: 4vw; } }
-    @media only screen and (max-width: 1023px) and (min-width: 414px) {
       .ticket .right p:nth-of-type(1) {
-        padding-top: 4vh; } }
+        padding-top: 0vh; } }
   @media only screen and (min-width: 1024px) {
     .ticket .left {
       margin-right: 4vw; } }

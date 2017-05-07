@@ -47,7 +47,7 @@ footer {
   transition: filter 12s;
   transition: filter 12s, -webkit-filter 12s; }
 
-@media only screen and (max-width: 1023px) and (min-width: 414px) {
+@media only screen and (max-width: 1023px) and (min-width: 415px) {
   .landing-image {
     background-image: url("/images/landing-desktop.png"); } }
 
@@ -125,7 +125,7 @@ body {
   height: 100vh;
   color: white; }
 
-@media only screen and (max-width: 1023px) and (min-width: 414px) {
+@media only screen and (max-width: 1023px) and (min-width: 415px) {
   body {
     background-image: url("/images/body-bg-desktop.png"); } }
 
@@ -279,7 +279,7 @@ iframe {
     position: absolute;
     opacity: 100%;
     left: 0; }
-  @media only screen and (max-width: 1023px) and (min-width: 414px) {
+  @media only screen and (max-width: 1023px) and (min-width: 415px) {
     .overlay.active .full-image {
       width: 74vw;
       bottom: 0;
@@ -295,7 +295,7 @@ iframe {
     bottom: 14vh;
     left: 49vw;
     width: 5vw; }
-  @media only screen and (max-width: 1023px) and (min-width: 414px) {
+  @media only screen and (max-width: 1023px) and (min-width: 415px) {
     .overlay.active .close {
       width: 3vw;
       background-color: black; } }
@@ -313,7 +313,7 @@ iframe {
       left: 10vw;
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
-    @media only screen and (max-width: 1023px) and (min-width: 414px) {
+    @media only screen and (max-width: 1023px) and (min-width: 415px) {
       .overlay.active .controls:nth-of-type(2) {
         width: 6vw;
         left: 20vw;
@@ -328,7 +328,7 @@ iframe {
       right: 10vw;
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }
-    @media only screen and (max-width: 1023px) and (min-width: 414px) {
+    @media only screen and (max-width: 1023px) and (min-width: 415px) {
       .overlay.active .controls:nth-of-type(3) {
         width: 6vw;
         right: 20vw;
