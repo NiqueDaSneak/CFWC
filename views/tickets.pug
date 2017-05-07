@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title CFWC 2017
+    meta(charset='utf-8')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='/socket.io/socket.io.js')
+    meta(name='theme-color', content='#F06300')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', href='images/favicon.ico')
+    link(rel='stylesheet', href='stylesheets/tickets.css')
+    script(type='text/javascript', src='/javascript/main.js')
+  body
+    .landing-screen
+      header.header-active
+        a(href='/')
+          img(src='images/logo.png', alt='Cincinnati Food and Wine Classic Logo')
+        |  
+        a(href='#') About
+        |  
+        a(href='#') Talent
+        |  
+        a(href='/tickets') Tickets
+        |  
+        a(href='#') Sponsors
+      .header
+        span Tickets
+        hr
+      .ticket-types
+        each ticket in content
+          .ticket
+            .left
+              p= ticket.ticketType
+              a(href='/learn-more') Learn More
+              a(href=ticket.ticketLink target="_blank") Buy
+            .right
+              p= ticket.price
+              p= ticket.dateAndTime
+              p= ticket.ticketDescription
+      footer
+        .logo-holder
+          a(href='https://vimeo.com/citystories')
+            img(src='images/vimeo-icon.svg', alt='Vimeo Icon')
+          |  
+          a(href='https://www.facebook.com/cincinnatifoodandwineclassic?ref=hl')
+            img(src='images/facebook-icon.svg', alt='Facebook Icon')
+          |  
+          a(href='http://instagram.com/cincinnatifoodandwineclassic')
+            img(src='images/instagram-icon.svg', alt='Instagram Icon')
+        .text-links
+          a(href='mailto:info@cincinnatifoodandwineclassic.com') Contact Us
+          |  
+          a(href='/privacy_policy') Privacy Policy
+          |  
+          a(href='/terms_of_use') Terms of Use
+          p &copy; 2017 Cincinnati Food and Wine Classic

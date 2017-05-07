@@ -1,0 +1,68 @@
+.header
+  padding-top: 6vh
+  @include desktop
+    padding-top: 12vh
+
+  span
+    color: $brand-darkgrey
+
+
+.ticket-types
+  p
+    color: $brand-darkgrey
+
+.ticket
+  width: 80vw
+  border: 1px solid $brand-orange
+  margin-bottom: 4vh
+  margin-left: 5vw
+  padding: 20px
+  text-align: center
+  font-weight: 300
+  @include desktop
+    margin-left: 8.6vw
+  @include tablet
+    margin-left: 7.5vw
+  a
+    text-decoration: none
+    color: $brand-orange
+    background-color: $brand-white
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50)
+    border-radius: 8px
+    padding-bottom: 2vh
+    padding-top: 2vh
+    width: 36vw
+    font-size: 4vw
+    display: inline-block
+    &:first-of-type
+      margin-right: 6vw
+    @include desktop
+      font-size: 1.4vw
+      width: 12vw
+    @include tablet
+      font-size: 2.6vw
+      width: 22vw
+
+  .left, .right
+    @include desktop
+      display: inline-block
+      vertical-align: middle
+
+  .right
+    @include tablet
+      width: inherit
+    @include desktop
+      margin-left: 4vw
+      width: 40vw
+    p:nth-of-type(1)
+      padding-top: 4vh
+      @include desktop
+        padding-top: 0vh
+
+  .left
+    @include desktop
+      margin-right: 4vw
+    p
+      padding-top: 4vh
+      @include desktop
+        padding-top: 0vh

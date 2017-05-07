@@ -86,4 +86,11 @@ $(document).ready(function() {
         console.log('not iPhone');
     }
 
+    // REMOVE BACKGROUND IMAGE
+    if (window.location.pathname === '/') {
+      console.log('has background-image');
+    } else {
+      $('body').css({'background-image': 'none'})
+    }
+
 });
