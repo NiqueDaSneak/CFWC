@@ -199,6 +199,9 @@ header a {
     @media only screen and (min-width: 1024px) {
       .ticket .left img {
         width: 14vw; } }
+    @media only screen and (max-width: 1023px) and (min-width: 415px) {
+      .ticket .left img {
+        width: 26vw; } }
 
 a {
   cursor: pointer; }
