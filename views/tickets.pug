@@ -21,22 +21,22 @@ html
         |  
         a(href='#') Talent
         |  
-        a(href='/tickets') Tickets
+        a(href='#') Tickets
         |  
         a(href='#') Sponsors
       .header
         span Tickets
         hr
       .ticket-types
-        each ticket in content
+        each ticket, index in content
           .ticket
             .left
-              p= ticket.ticketType
+              img(src='images/' + ticket.photoOrGraphic.sys.id + '.png')
+              p= ticket.price
+              p= ticket.dateAndTime
               a(href='/learn-more') Learn More
               a(href=ticket.ticketLink target="_blank") Buy
             .right
-              p= ticket.price
-              p= ticket.dateAndTime
               p= ticket.ticketDescription
       footer
         .logo-holder
