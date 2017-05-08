@@ -122,7 +122,7 @@ header a {
   color: #434040; }
 
 .ticket {
-  width: 80vw;
+  width: 86vw;
   border: 1px solid #F06300;
   margin-bottom: 4vh;
   margin-left: 5vw;
@@ -131,7 +131,7 @@ header a {
   font-weight: 300; }
   @media only screen and (min-width: 1024px) {
     .ticket {
-      margin-left: 8.6vw; } }
+      margin-left: 5.4vw; } }
   @media only screen and (max-width: 1023px) and (min-width: 415px) {
     .ticket {
       margin-left: 7.5vw; } }
@@ -175,11 +175,8 @@ header a {
   @media only screen and (min-width: 1024px) {
     .ticket .left {
       margin-right: 4vw; } }
-  .ticket .left p {
-    padding-top: 4vh; }
-    @media only screen and (min-width: 1024px) {
-      .ticket .left p {
-        padding-top: 0vh; } }
+  .ticket .left img {
+    width: 8vw; }
 
 a {
   cursor: pointer; }
