@@ -39,15 +39,19 @@ app.get('/terms_of_use', (req, res) => {
 
 app.get('/tickets', (req, res) => {
   var content = []
+  var imgs = []
   client.getEntries()
   .then((response) => {
       for (var i = 0; i < response.items.length; i++) {
           if (response.items[i].sys.contentType.sys.id === 'tickets') {
               content.push(response.items[i].fields)
+              imgs.push(response.items[i].fields.photoOrGraphic.fields.file.url.substring(2))
+              console.log(response.items[i].fields.photoOrGraphic.sys.id)
           }
       }
-      res.render('tickets', { content: content })
+      res.render('tickets', {content: content, imgs: imgs})
   })
+  .catch(console.error)
 })
 
 app.get('/emails', (req, res) => {
